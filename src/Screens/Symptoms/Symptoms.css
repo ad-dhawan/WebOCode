@@ -1,7 +1,42 @@
 .main {
-    font-size: 50px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.boy {
+    margin-top: 30px;
+    align-items: center;
+
+}
+
+.left { 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.right {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.center {
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 100vh;
+
+}
+
+.precautions {
+    display: flex;
+    flex-direction: row;
+}
+
+.symptoms {
+    display: flex;
+    flex-direction: row;
 }
