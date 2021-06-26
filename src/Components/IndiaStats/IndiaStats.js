@@ -25,7 +25,7 @@ const GlobalCases = () => {
   } else {
     return (
       <Fragment>
-          <h5>Global Cases</h5>
+          <h1>Global Cases</h1>
         <div className="card-area ">
           <div className="container">
             <div className="row mt-5">
