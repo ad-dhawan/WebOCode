@@ -5,12 +5,12 @@ import Stats from './Screens/Stats/Stats'
 import News from './Screens/News/News'
 import Symptoms from './Screens/Symptoms/Symptoms'
 import Navbar from './Components/Navbar/Navbar'
-// import Scroll from './ScrollToTop/scrollToTop';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
 
 function App() {
   return (
     <>
-      {/* <Scroll /> */}
+      <ScrollToTop />
       <Navbar class="nav" />
       <Home id="home" />
       <Stats id="stats" />

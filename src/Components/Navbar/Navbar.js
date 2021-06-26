@@ -12,7 +12,7 @@ const Navbar = () => {
       <nav class="navbar">
         <div class="nav-container">
           <Link exact to="/" class="nav-logo">
-            RDA
+            Team RDA
           </Link>
 
           <ul class={click ? "nav-menu active" : "nav-menu"}>
