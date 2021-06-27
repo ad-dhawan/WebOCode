@@ -2,7 +2,7 @@ import './App.css';
 
 import Home from './Screens/Home/Home'
 import Stats from './Screens/Stats/Stats'
-import News from './Screens/News/News'
+import News from './Screens/News/Info'
 import Symptoms from './Screens/Symptoms/Symptoms'
 import Navbar from './Components/Navbar/Navbar'
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop'

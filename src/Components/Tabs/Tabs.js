@@ -10,7 +10,7 @@ const Component = React.Component;
 const TAB_DATA = [
   ["Precautions", <Precautions/>],
   ["Symptoms", <Symptoms />],
-  ["Post-Covid", "Post Covid Here"],
+  // ["Post-Covid", "Post Covid Here"],
 ];
 
 export default class Tabs extends Component {

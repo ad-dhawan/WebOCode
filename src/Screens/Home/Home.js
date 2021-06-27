@@ -36,7 +36,7 @@ const Home = () => {
   </video>
             {/*  
           <img className="video-responsive" src={ball} alt="Covid ball" />*/}
-            <img className="video-responsive" src={covid} alt="Covid ball" />
+            {/* <img className="video-responsive" src={covid} alt="Covid ball" /> */}
           </div>
         </div>
       </div>

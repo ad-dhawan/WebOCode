@@ -1,43 +1,6 @@
 .main {
-    display: flex;
     height: 100vh;
-    flex-direction: row;
-}
-
-.boy {
-    margin-top: 80px;
-    align-items: center;
-    
-}
-
-.left { 
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    display: flex;
-}
-
-.right {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    display: flex;
-}
-
-.center {
     justify-content: center;
     align-items: center;
-     flex-direction: column;
-    display: flex; 
-
-}
-
-.precautions {
     display: flex;
-    flex-direction: row;
-}
-
-.symptoms {
-    display: flex;
-    flex-direction: row;
 }

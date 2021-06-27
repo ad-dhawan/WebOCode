@@ -14,7 +14,7 @@ const Graph = () => {
     axios
       .get("https://api.covid19india.org/data.json")
       .then(res => {
-        console.log(res);
+        // console.log(res);
         for (const dataObj of res.data.cases_time_series) {
           confirmedCases.push(parseInt(dataObj.totalconfirmed));
           casesDate.push(parseInt(dataObj.dateymd));

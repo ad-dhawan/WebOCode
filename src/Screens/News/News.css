@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700&family=Newsreader:wght@200;400;600&display=swap');
 
 .live-responsive{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 .live-update{
@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
 }
+
 /* .news-card{
     border: 2px solid rgb(151, 150, 150);
     width:300px ;
@@ -52,10 +53,4 @@
 .card-button:hover{
     color: white;
     background-color: rgb(185, 4, 4) ;
-} */
-/* .News-head{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 } */
