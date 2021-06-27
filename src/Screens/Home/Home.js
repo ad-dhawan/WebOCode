@@ -1,6 +1,6 @@
 import React from "react";
-import covid from './covid.gif';
 import "./Home.css";
+import ball from "../../Assets/covidball.mp4";
 
 const Home = () => {
   return (
@@ -16,7 +16,11 @@ const Home = () => {
             </p>
           </div>
           <div className="col-sm-6 video">
-          <img className="video-responsive" src={covid} alt="Covid ball" />
+          <video autoPlay loop muted height="500">
+  <source src={ball} type="video/mp4"/> 
+  </video>
+            {/*  
+          <img className="video-responsive" src={ball} alt="Covid ball" />*/}
           </div>
         </div>
       </div>

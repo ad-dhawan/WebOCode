@@ -12,60 +12,68 @@ import vid7 from "../../Assets/symptom2.mp4"
 import vid8 from "../../Assets/symptom3.mp4"
 import vid9 from "../../Assets/symptom4.mp4"
 import vid10 from "../../Assets/symptom5.mp4"
+import vid11 from "../../Assets/precautions.mp4"
 
 
 const Symptoms = () => {
   return (
-    <div class="main"> 
-  <div class="center">
-  <video autoPlay loop muted height="180">
+  <div class="main"> 
+  <div>
+<div class="center">
+  <video autoPlay loop muted height="150">
   <source src={vid5} type="video/mp4"/> 
-  </video> </div>
+  </video> </div> 
   <div class="precautions">
   <div class="left">
-    <video autoPlay loop muted height="180" >
+    <video autoPlay loop muted height="150" >
   <source src={vid1} type="video/mp4"/> 
   </video>
-  <video autoPlay loop muted width="200" height="200">
+  <video autoPlay loop muted height="170">
     <source src={vid2} type="video/mp4"/>
 </video></div>
 <div class="boy">
-    <video autoPlay loop muted height="180">
+    <video autoPlay loop muted height="150">
   <source src={boy} type="video/mp4"/> 
   </video></div>
   <div class="right">
-<video autoPlay loop muted width="200" height="200">
+<video autoPlay loop muted height="170">
     <source src={vid3} type="video/mp4"/>
 </video>
-<video autoPlay loop muted width="200" height="200">
+<video autoPlay loop muted height="170">
     <source src={vid4} type="video/mp4"/>
 </video>
 </div>
+</div>
   </div>
+  <div>
   <div class="center">
-  <video autoPlay loop muted height="180">
+  <video autoPlay loop muted height="150">
   <source src={vid6} type="video/mp4"/> 
   </video> </div>
   <div class="symptoms">
   <div class="left">
-    <video autoPlay loop muted height="180" >
+    <video autoPlay loop muted height="150" >
   <source src={vid7} type="video/mp4"/> 
   </video>
-  <video autoPlay loop muted width="200" height="200">
+  <video autoPlay loop muted height="170">
     <source src={vid8} type="video/mp4"/>
 </video></div>
 <div class="boy">
-    <video autoPlay loop muted height="180">
-  <source src={boy} type="video/mp4"/> 
+    <video autoPlay loop muted height="150">
+  <source src={vid11} type="video/mp4"/> 
   </video></div>
   <div class="right">
-<video autoPlay loop muted width="200" height="200">
+<video autoPlay loop muted height="170">
     <source src={vid9} type="video/mp4"/>
 </video>
-<video autoPlay loop muted width="200" height="200">
+<video autoPlay loop muted height="170">
     <source src={vid10} type="video/mp4"/>
 </video>
 </div>
+
+
+  </div>
+
   </div>
 </div>
     
