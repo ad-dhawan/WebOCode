@@ -18,7 +18,7 @@ function App() {
       <News id="news" />
       <Symptoms id="symptoms" />
       <Vaccine id="vaccine" />
-      <div>
+      <div style={{background: 'black', color: 'white', display: 'flex', justifyContent: 'center'}}>
         <p>Made with ❤️ by Team RDA</p>
       </div>
     </>
