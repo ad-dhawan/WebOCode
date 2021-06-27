@@ -13,11 +13,14 @@ import vid8 from "../../Assets/symptom3.mp4"
 import vid9 from "../../Assets/symptom4.mp4"
 import vid10 from "../../Assets/symptom5.mp4"
 
+import Tabs from '../../Components/Tabs/Tabs'
+
 
 const Symptoms = () => {
   return (
-    <div class="main"> 
-  <div class="center">
+    <div class="main" id="symptoms"> 
+    <Tabs />
+  {/* <div class="center">
   <video autoPlay loop muted height="180">
   <source src={vid5} type="video/mp4"/> 
   </video> </div>
@@ -66,7 +69,7 @@ const Symptoms = () => {
     <source src={vid10} type="video/mp4"/>
 </video>
 </div>
-  </div>
+  </div> */}
 </div>
     
       );
