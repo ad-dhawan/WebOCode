@@ -1,0 +1,29 @@
+.card-area {
+  margin-bottom: 50px;
+  width: 80%;
+}
+.card {
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 15px;
+}
+
+.row {
+  margin-left: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  width: 20rem;
+  padding: 15px;
+}
+
+.card-text {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card-title {
+  font-size: 20px;
+}

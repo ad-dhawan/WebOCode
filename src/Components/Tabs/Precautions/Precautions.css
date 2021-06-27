@@ -1,18 +1,13 @@
 .main {
     display: flex;
-<<<<<<< HEAD
-    height: 100vh;
-    flex-direction: row;
-=======
     flex-direction: column;
     height: 100vh;
->>>>>>> cea3d570db8fad7293022dea15e77ce4cbceea6a
 }
 
 .boy {
-    margin-top: 80px;
+    margin-top: 30px;
     align-items: center;
-    
+
 }
 
 .left { 
@@ -32,8 +27,7 @@
 .center {
     justify-content: center;
     align-items: center;
-     flex-direction: column;
-    display: flex; 
+    display: flex;
 
 }
 
