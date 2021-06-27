@@ -1,6 +1,11 @@
 import React from "react";
-import covid from './covid.gif';
+<<<<<<< HEAD
+=======
+import Typed from "react-typed";
+import covid from "./covid.gif";
+>>>>>>> cea3d570db8fad7293022dea15e77ce4cbceea6a
 import "./Home.css";
+import ball from "../../Assets/covidball.mp4";
 
 const Home = () => {
   return (
@@ -8,15 +13,36 @@ const Home = () => {
       <div className="container">
         <div className="setting-home">
           <div className="col-sm-6 written-content">
-            <h1 className="home-head">Let's defeat <b className="covid">COVID-19</b></h1>
+            <h1 className="home-head">
+              Let's defeat <b className="covid">COVID-19</b>
+            </h1>
             <p className="home-content">
               If you plan on customizing the Bootstrap Sass files, or don't want
               to use a CDN for the stylesheet, it may be helpful to install
               vanilla Bootstrap as well.
             </p>
+            <p style={{ fontSize: "20px" }}>
+              Stay{" "}
+              <Typed
+                class="typed-text"
+                style={{ fontSize: "20px" }}
+                strings={["Home", "Safe"]}
+                typeSpeed={50}
+                backSpeed={40}
+                loop
+              />
+            </p>
           </div>
           <div className="col-sm-6 video">
-          <img className="video-responsive" src={covid} alt="Covid ball" />
+<<<<<<< HEAD
+          <video autoPlay loop muted height="500">
+  <source src={ball} type="video/mp4"/> 
+  </video>
+            {/*  
+          <img className="video-responsive" src={ball} alt="Covid ball" />*/}
+=======
+            <img className="video-responsive" src={covid} alt="Covid ball" />
+>>>>>>> cea3d570db8fad7293022dea15e77ce4cbceea6a
           </div>
         </div>
       </div>
