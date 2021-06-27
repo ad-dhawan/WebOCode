@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import live from "./Live.gif";
-import news from './newsimg.jpg';
+import NewsCard from "../../Components/NewsCard/NewsCard";
+import axios from "axios";
 
 import { Container, Card, Row, Col } from "react-bootstrap";
 import "./News.css";
@@ -10,6 +11,20 @@ import Slider from "react-slick";
 // import "slick-carousel/slick/slick-theme.css";
 
 const News = () => {
+  const [newsData, setNewsData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        "http://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=f56265da815940c781ee2ac47e3f1109"
+      )
+      .then((res) => {
+        setNewsData(res.data.articles);
+        // console.log(res.data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
   var Scroll_set = {
     dots: false,
     infinite: true,
@@ -20,33 +35,34 @@ const News = () => {
   return (
     <div class="main" id="news">
       <Container>
-        <div className="clearfix mt-5 mb-2 live-update" >
+        <div className="clearfix mt-5 mb-2 live-update">
           <div>
-          <img className="live-responsive" src={live} alt="Covid ball" />
+            <img className="live-responsive" src={live} alt="Covid ball" />
           </div>
           <div>
             <h4 className="News-Head">Live Updates</h4>
-          </div> 
-        </div>
-        <div>
-          <div className="news-card">
-            <img src={news} className="card-img" />
-            <h5 className="card-title">Title will be shown</h5>
-            <h6 className="card-date">24/06/2022</h6>
-            <p className="card-description">If you plan on customizing the Bootstrap Sass files, or don't want to use a CDN for the stylesheet, it may be helpful to install vanilla Bootstrap as well.</p>
-            <button className="card-button">Read more</button>
           </div>
         </div>
- 
-          
-        
+        <div style={{flexDirection: 'row', display: 'flex'}}>
+          {newsData.map((news) => {
+            return (
+              <NewsCard
+                img={news.urlToImage}
+                title={news.title}
+                date={news.publishedAt}
+                desc={news.description}
+              />
+            );
+          })}
+        </div>
       </Container>
     </div>
   );
 };
 
 export default News;
-{/* <Row>
+{
+  /* <Row>
           <Slider {...Scroll_set}>
           {movie.map(function(movie) {
             return(
@@ -66,4 +82,5 @@ export default News;
             );
         })}
           </Slider>
-        </Row> */}
+        </Row> */
+}
