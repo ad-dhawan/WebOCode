@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import CountUp from 'react-countup';
+import Slide from 'react-reveal/Slide'
 
 import './IndiaStats.css'
 
@@ -7,6 +8,8 @@ const Card = ({title,cases,color}) => {
     // console.log(confirmed);
     return (
         <Fragment>
+            <Slide bottom>
+
             <div className="col-md-4 mt-5">
                 <div className="card" style={{borderBottom: `10px solid ${color}`}}>
                     <div className="card-body">
@@ -15,6 +18,7 @@ const Card = ({title,cases,color}) => {
                     </div>
                 </div>
             </div>
+            </Slide>
         </Fragment>
     )
 }

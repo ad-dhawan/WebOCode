@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import axios from "axios";
+import Slide from 'react-reveal/Slide'
 
 import "./Graph.css";
 
@@ -52,6 +53,8 @@ const Graph = () => {
 
   return (
     <>
+    <Slide bottom>
+
       <div>
       <Line
         data={chartData}
@@ -76,6 +79,7 @@ const Graph = () => {
           }}
       />
       </div>
+    </Slide>
     </>
   );
 };

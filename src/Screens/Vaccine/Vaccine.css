@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700&family=Newsreader:wght@200;400;600&display=swap');
+.main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+
+}
+.covid{
+    color:#1d3557;
+}
+.setting-home{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-evenly;
+    padding: 0 10px;
+}
+.home-head{
+    font-size: 45px;
+    margin-bottom: 2%;
+    color: black;
+    font-weight: 600;
+}
+.home-content{
+    font-size: 30px;
+}
+.video-responsive{
+    width: 450px;
+    height: 450px;
+}
+.written-content{
+    margin:8% 5%;
+    align-content: center;
+}
+.home{
+    padding: 5%;
+}

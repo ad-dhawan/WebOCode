@@ -58,6 +58,16 @@ const Navbar = () => {
                 Symptoms
               </Link>
             </li>
+            <li class="nav-item">
+              <Link
+                activeClass="active"
+                to="vaccine"
+                spy={true}
+                smooth={true}
+              >
+                Vaccine
+              </Link>
+            </li>
           </ul>
           <div class="nav-icon" onClick={handleClick}>
             <Menu />

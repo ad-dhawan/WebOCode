@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Select from "react-select";
 import axios from "axios";
+import Slide from "react-reveal/Slide";
 
 export default class SearchStats extends Component {
   constructor(props) {
@@ -80,45 +81,49 @@ export default class SearchStats extends Component {
           boxShadow: "5px 5px 10px gray",
         }}
       >
-        <Select
-          maxMenuHeight={200}
-          isSearchable={true}
-          placeholder={"Search State"}
-          styles={{ control: customBaseStyles, menu: customMenuStyles }}
-          options={this.state.selectOptions}
-          onChange={this.handleChange.bind(this)}
-        />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            marginRight: "5px",
-            marginLeft: "5px",
-            marginTop: "20px",
-            marginBottom: "20px",
-          }}
-        >
-          <p style={{ fontSize: 16, textAlign: 'center' }}>
-            Cases: {this.state.confirmed}
-            <p style={{ fontSize: 14, marginTop: "10px" }}>
-              ↑ {this.state.deltaConfirmed}
+        <Slide bottom>
+          <Select
+            maxMenuHeight={200}
+            isSearchable={true}
+            placeholder={"Search State"}
+            styles={{ control: customBaseStyles, menu: customMenuStyles }}
+            options={this.state.selectOptions}
+            onChange={this.handleChange.bind(this)}
+          />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              marginRight: "5px",
+              marginLeft: "5px",
+              marginTop: "20px",
+              marginBottom: "20px",
+            }}
+          >
+            <p style={{ fontSize: 16, textAlign: "center" }}>
+              Cases: {this.state.confirmed}
+              <p style={{ fontSize: 14, marginTop: "10px" }}>
+                ↑ {this.state.deltaConfirmed}
+              </p>
             </p>
-          </p>
-          <p style={{ fontSize: 16, textAlign: 'center' }}>
-            Deaths: {this.state.deaths}
-            <p style={{ fontSize: 14, marginTop: "10px" }}>
-              ↑ {this.state.deltaDeaths}
+            <p style={{ fontSize: 16, textAlign: "center" }}>
+              Deaths: {this.state.deaths}
+              <p style={{ fontSize: 14, marginTop: "10px" }}>
+                ↑ {this.state.deltaDeaths}
+              </p>
             </p>
-          </p>
-          <p style={{ fontSize: 16, textAlign: 'center' }}>
-            Recovered: {this.state.recovered}
-            <p style={{ fontSize: 14, marginTop: "10px" }}>
-              ↑ {this.state.deltaRecovered}
+            <p style={{ fontSize: 16, textAlign: "center" }}>
+              Recovered: {this.state.recovered}
+              <p style={{ fontSize: 14, marginTop: "10px" }}>
+                ↑ {this.state.deltaRecovered}
+              </p>
             </p>
-          </p>
-          <p style={{ fontSize: 16, textAlign: 'center' }}>Active: {this.state.active}</p>
-        </div>
+            <p style={{ fontSize: 16, textAlign: "center" }}>
+              Active: {this.state.active}
+            </p>
+          </div>
+        </Slide>
       </div>
     );
   }
