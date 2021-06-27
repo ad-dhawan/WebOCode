@@ -1,12 +1,7 @@
 .main {
     display: flex;
-<<<<<<< HEAD
     height: 100vh;
     flex-direction: row;
-=======
-    flex-direction: column;
-    height: 100vh;
->>>>>>> cea3d570db8fad7293022dea15e77ce4cbceea6a
 }
 
 .boy {

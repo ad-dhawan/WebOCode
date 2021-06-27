@@ -3,7 +3,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "./NewsCard.css";
 
-const News = (props) => {
+const News = (props,url) => {
   return (
     <div class="main" id="news">
       <Container>
@@ -14,7 +14,7 @@ const News = (props) => {
           <h5 className="card-title">{props.title}</h5>
           <h6 className="card-date">{props.date}</h6>
           <p className="card-description">{props.desc}</p>
-          <button className="card-button">Read more</button>
+          <button className="card-button" >Read more</button>
           </div>
         </div>
       </Container>

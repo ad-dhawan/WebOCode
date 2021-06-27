@@ -1,18 +1,18 @@
 import React from "react";
 import "./Symptoms.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import vid1 from "../../Assets/precaution1.mp4"
-import vid2 from "../../Assets/precaution2.mp4"
-import vid3 from "../../Assets/precaution3.mp4"
-import vid4 from "../../Assets/precaution4.mp4"
-import vid5 from "../../Assets/precaution5.mp4"
-import boy from "../../Assets/boywithmask.mp4"
-import vid6 from "../../Assets/symptom1.mp4"
-import vid7 from "../../Assets/symptom2.mp4"
-import vid8 from "../../Assets/symptom3.mp4"
-import vid9 from "../../Assets/symptom4.mp4"
-import vid10 from "../../Assets/symptom5.mp4"
-import vid11 from "../../Assets/precautions.mp4"
+// import vid1 from "../../Assets/precaution1.mp4"
+// import vid2 from "../../Assets/precaution2.mp4"
+// import vid3 from "../../Assets/precaution3.mp4"
+// import vid4 from "../../Assets/precaution4.mp4"
+// import vid5 from "../../Assets/precaution5.mp4"
+// import boy from "../../Assets/boywithmask.mp4"
+// import vid6 from "../../Assets/symptom1.mp4"
+// import vid7 from "../../Assets/symptom2.mp4"
+// import vid8 from "../../Assets/symptom3.mp4"
+// import vid9 from "../../Assets/symptom4.mp4"
+// import vid10 from "../../Assets/symptom5.mp4"
+// import vid11 from "../../Assets/precautions.mp4"
 
 import Tabs from '../../Components/Tabs/Tabs'
 
@@ -20,10 +20,10 @@ import Tabs from '../../Components/Tabs/Tabs'
 const Symptoms = () => {
   return (
   <div class="main"> 
-  <div>
+  {/* <div>
 <div class="center">
   <video autoPlay loop muted height="150">
-    <div class="main" id="symptoms"> 
+    <div class="main" id="symptoms">  */}
     <Tabs />
   {/* <div class="center">
   <video autoPlay loop muted height="180">

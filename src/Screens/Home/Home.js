@@ -1,9 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
-=======
 import Typed from "react-typed";
 import covid from "./covid.gif";
->>>>>>> cea3d570db8fad7293022dea15e77ce4cbceea6a
 import "./Home.css";
 import ball from "../../Assets/covidball.mp4";
 
@@ -34,15 +31,12 @@ const Home = () => {
             </p>
           </div>
           <div className="col-sm-6 video">
-<<<<<<< HEAD
           <video autoPlay loop muted height="500">
   <source src={ball} type="video/mp4"/> 
   </video>
             {/*  
           <img className="video-responsive" src={ball} alt="Covid ball" />*/}
-=======
             <img className="video-responsive" src={covid} alt="Covid ball" />
->>>>>>> cea3d570db8fad7293022dea15e77ce4cbceea6a
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import live from "./Live.gif";
 import NewsCard from "../../Components/NewsCard/NewsCard";
 import axios from "axios";
 
-import { Container, Card, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./News.css";
 import Slider from "react-slick";
 // import { Link } from "react-router-dom";
