@@ -1,44 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700&family=Newsreader:wght@200;400;600&display=swap');
 
 .news-card{
-    /* border: 2px solid rgb(151, 150, 150); */
     width:300px ;
     border-radius: 8px;
-    /* height: 415px; */
-    box-shadow: 2px 2px 10px gray;
+    box-shadow: 2px 2px 10px rgb(170, 170, 170);
+    font-family: 'Newsreader', serif;
 }
 
 .card-img{
     height: 200px;
-    object-fit: cover;
+    object-fit: fill;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
 .card-title{
-    font-size: 18px;
-    text-align: center;
-    /* margin: 3px 2%; */
+    font-size: 17px;
 }
 .card-description{
-    font-size: 15px;
+    font-size: 13px;
     color: grey;
-    /* margin:3% 4%; */
+    margin-top: 10px;
 }
 .card-date{
     font-size: 10px;
-    /* margin:1% 4%; */
+    display: flex;
+    
 }
-
 .card-button{
     border:2px solid rgb(185, 4, 4);
     color: rgb(185, 4, 4);
     padding: 2px 4px;
     background-color: white;
-    /* float:right; */
     height: 35px;
-    width: 80px;
-    margin:0 4%;
+    width: 100px;
     border-radius: 5px;
 }
 .card-button:hover{

@@ -1,23 +1,30 @@
 import React from "react";
-
-import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Container, Card } from "react-bootstrap";
 import "./NewsCard.css";
 
 const News = (props) => {
+  var info_url = props.news_url;
   return (
     <div class="main" id="news">
-      <Container>
-        <div className="news-card">
-          <img src={props.img} className="card-img" />
-          <div style={{padding: '5px'}}>
-
-          <h5 className="card-title">{props.title}</h5>
-          <h6 className="card-date">{props.date}</h6>
-          <p className="card-description">{props.desc}</p>
-          <button className="card-button">Read more</button>
-          </div>
-        </div>
-      </Container>
+      <Card style={{ width: "20rem", height: "36rem" }}>
+        <Card.Img src={props.img} />
+        <Card.Body>
+          <Card.Title>
+            <b className="card-title">{props.title}</b>
+          </Card.Title>
+          <Card.Text>
+            <h5 className="card-date">{props.date}</h5>
+            <p className="card-description">{props.desc}</p>
+          </Card.Text>
+          <button
+            className="card-button"
+            onClick={() => window.open(info_url, "_blank")}
+          >
+            Read More
+          </button>
+        </Card.Body>
+      </Card>
     </div>
   );
 };
