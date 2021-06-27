@@ -21,17 +21,14 @@ const Home = () => {
                 want to use a CDN for the stylesheet, it may be helpful to
                 install vanilla Bootstrap as well.
               </p>
-              <p style={{ fontSize: "20px" }}>
-                Stay{" "}
                 <Typed
                   class="typed-text"
-                  style={{ fontSize: "20px" }}
-                  strings={["Home", "Safe"]}
+                  style={{ fontSize: "30px" }}
+                  strings={["Stay Home", "Stay Safe"]}
                   typeSpeed={50}
                   backSpeed={40}
                   loop
                 />
-              </p>
             </Fade>
           </div>
           <Pulse>
